@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajarshi Janak University</title>
+    
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for social icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script>
+        // JavaScript for mobile menu toggle
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+    </script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="bg-gray-200 flex flex-col">
+        <!-- Desktop Navbar -->
+        <nav class="hidden md:flex justify-between px-4 py-4 items-center">
+            <!-- Left links -->
+            <div class="flex space-x-6">
+                <a href="#" class="text-gray-700 hover:text-blue-500">Our Campuses</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500">Events</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500">Exams & Results</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500">Admission Portal</a>
+            </div>
+
+            <!-- Right section (Phone, Help-center, Social icons) -->
+            <div class="flex items-center space-x-6">
+                <a href="#" class="text-gray-700">Phone: <span class="font-semibold">041-590931</span></a>
+                <a href="#" class="text-gray-700">Help-center</a>
+                <div class="flex space-x-4">
+                    <a href="mailto:razeshjha0@gmail.com" class="text-gray-700 hover:text-blue-500"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener" class="text-gray-700 hover:text-blue-500"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener" class="text-gray-700 hover:text-blue-500"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener" class="text-gray-700 hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.skype.com" target="_blank" rel="noopener" class="text-gray-700 hover:text-blue-400"><i class="fab fa-skype"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Navbar -->
+        <div class="bg-blue-900 text-white p-4 flex justify-between items-center md:hidden">
+            <!-- Logo -->
+            <img src="img/logo.jpg" alt="Logo" class="h-8">
+            
+            <!-- Menu Icon -->
+            <button onclick="toggleMenu()" class="text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu (Hidden by Default) -->
+        <div id="mobile-menu" class="hidden bg-gray-200">
+            <nav class="space-y-4 p-4">
+                <a href="#" class="block text-gray-700 hover:text-blue-500">Home</a>
+                <a href="#" class="block text-gray-700 hover:text-blue-500">About Us</a>
+                <a href="#" class="block text-gray-700 hover:text-blue-500">Academics</a>
+                <a href="#" class="block text-gray-700 hover:text-blue-500">University Life</a>
+                <a href="#" class="block text-gray-700 hover:text-blue-500">Admissions</a>
+                <a href="#" class="block text-gray-700 hover:text-blue-500">RJU Offices</a>
+                <a href="#" class="block text-gray-700 hover:text-blue-500">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="relative bg-cover bg-center h-96 sm:h-[500px] md:h-[600px] lg:h-[700px]" style="background-image: url('/img/background.jpg');">
+        <div class="absolute inset-0 bg-gray-200 opacity-50"></div>
+        <div class="relative z-10 flex items-center justify-center h-full text-center text-pink-500 px-6">
+            <div>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Welcome to Our Website</h1>
+                <p class="text-lg sm:text-xl mb-6">Explore our latest content, services, and offerings.</p>
+                <a href="#get-started" class="bg-yellow-500 hover:bg-yellow-600 text-black py-2 px-6 rounded-lg text-lg font-semibold">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+        <!-- Cards Section -->
+        <div class="w-full bg-gray-100 p-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <img src="./card img1.webp" alt="Card Image" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h2 class="text-xl font-semibold mb-2">Card Title 1</h2>
+                    <p class="text-gray-700 mb-4">This image appears to depict an outdoor event...</p>
+                    <a href="#" class="text-blue-500 hover:underline">Learn More</a>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <img src="./card img2.webp" alt="Card Image" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h2 class="text-xl font-semibold mb-2">Card Title 2</h2>
+                    <p class="text-gray-700 mb-4">Rajarshi Janak University, located in Nepal...</p>
+                    <a href="#" class="text-blue-500 hover:underline">Learn More</a>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <img src="./card img3.jpg" alt="Card Image" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h2 class="text-xl font-semibold mb-2">Card Title 3</h2>
+                    <p class="text-gray-700 mb-4">Rajarshi Janak University (RJU) likely offers...</p>
+                    <a href="#" class="text-blue-500 hover:underline">Learn More</a>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <img src="./card img4.jpg" alt="Card Image" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h2 class="text-xl font-semibold mb-2">Card Title 4</h2>
+                    <p class="text-gray-700 mb-4">Rajarshi Janak University (RJU) likely offers...</p>
+                    <a href="#" class="text-blue-500 hover:underline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Footer -->
+        <footer class="w-full bg-gray-800 text-white py-10">
+            <div class="px-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    <!-- Footer Column 1: Academics -->
+                    <div>
+                        <h3 class="font-semibold text-xl mb-4">Academics</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white">Programs & Courses</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Faculties & Departments</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Research</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Academic Calendar</a></li>
+                        </ul>
+                    </div>
+                    <!-- Other Footer Columns (Admissions, Resources, Contact Us) -->
+                       <!-- Footer Column 2: Admissions -->
+            <div>
+                <h3 class="font-semibold text-xl mb-4">Admissions</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white">Undergraduate</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Postgraduate</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">International Students</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Scholarships</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Column 3: Student Resources -->
+            <div>
+                <h3 class="font-semibold text-xl mb-4">Student Resources</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white">Library</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">E-Learning Portal</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Career Services</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Student Handbook</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Column 4: Contact Us -->
+            <div>
+                <h3 class="font-semibold text-xl mb-4">Contact Us</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white">Email: info@university.edu</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Phone: 041-590931</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Address: janakpur, Rajarshi janak University </a></li>
+                    <li>
+                        <div class="flex space-x-4 mt-2">
+                            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+                </div>
+                <!-- Footer Bottom Section -->
+                <div class="text-center mt-10 border-t border-gray-700 pt-6">
+                    <p class="text-gray-400 text-sm">&copy; 2025 [Rajarshi Janak University]</p>
+                </div>
+            </div>
+        </footer>
+    
+    
+</body>
+</html>
